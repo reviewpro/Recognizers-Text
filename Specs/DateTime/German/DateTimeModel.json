@@ -4486,6 +4486,28 @@
     "NotSupported": "java, javascript, python",
     "Results": [
       {
+  "Text": "ersten",
+  "Start": 16,
+  "End": 21,
+  "TypeName": "ordinal",
+  "Resolution": {
+    "offset": "1",
+    "relativeTo": "start",
+    "value": "1"
+  }
+}
+{
+  "Text": "zweiten",
+  "Start": 43,
+  "End": 49,
+  "TypeName": "ordinal",
+  "Resolution": {
+    "offset": "2",
+    "relativeTo": "start",
+    "value": "2"
+  }
+}
+      {
         "Text": "tag der arbeit",
         "Start": 0,
         "End": 13,
