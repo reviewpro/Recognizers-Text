@@ -57,4 +57,48 @@
             </plugin>
         </plugins>
     </build>
+
+    <repositories>
+        <repository>
+            <id>spring-snapshots</id>
+            <name>Spring Snapshots</name>
+            <url>https://repo.spring.io/snapshot</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>icm</id>
+            <name>ICM Repository</name>
+            <url>https://maven.icm.edu.pl/artifactory/repo/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>spring-milestones-lib</id>
+            <url>http://repo.spring.io/libs-milestone/</url>
+        </repository>
+    </repositories>
+    <distributionManagement>
+        <repository>
+            <id>deployment.nexus3</id>
+            <name>Internal Releases</name>
+            <url>https://nexus3.reviewpro.com/repository/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>deployment.nexus3</id>
+            <name>Internal Releases</name>
+            <url>https://nexus3.reviewpro.com/repository/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
