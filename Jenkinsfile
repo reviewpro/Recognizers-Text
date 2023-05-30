@@ -31,7 +31,7 @@ pipeline {
         checkout scm
         script {
           gitPipelineUtils.gitCheckout(env.BRANCH_NAME)
-          nextTag = tagPipelineUtils.getNextReleaseTag(params.CLOSE)
+          nextTag = tagPipelineUtils.getNextReleaseTag()
         }
       }
     }
